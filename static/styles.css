@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #050208;
+  color-scheme: dark;
+}
+
+/* OrbitControls canvas fills the island */
+canvas {
+  display: block;
+  outline: none;
+}
+
+/* Thin scrollbars for side panels */
+aside::-webkit-scrollbar,
+aside *::-webkit-scrollbar {
+  width: 6px;
+}
+aside::-webkit-scrollbar-thumb,
+aside *::-webkit-scrollbar-thumb {
+  background: rgba(251, 146, 60, 0.25);
+  border-radius: 3px;
+}
+aside::-webkit-scrollbar-track,
+aside *::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Range inputs */
+input[type="range"] {
+  height: 4px;
+  cursor: pointer;
+}
+
+/* Line clamp utility fallback */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
